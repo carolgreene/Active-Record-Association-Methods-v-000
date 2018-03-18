@@ -1,7 +1,7 @@
 class Song < ActiveRecord::Base
   belongs_to :artist
   belongs_to :genre
-  attr_accessor :artist
+
 
   def get_genre_name
     self.genre.name
